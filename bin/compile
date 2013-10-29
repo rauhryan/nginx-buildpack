@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+apt-get -y install --force-yes software-properties-common
+add-apt-repository -y ppa:nginx/stable
 apt-get update
-apt-get -y install nginx
+apt-get -y install --force-yes nginx
 
 BINDIR=$(dirname "$0")
 
