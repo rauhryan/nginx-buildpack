@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-if [[ -f $1/.nginx ]]; then
+if [[ -f $1/index.html ]]; then
   echo "nginx"
   exit 0
 else
