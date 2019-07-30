@@ -12,7 +12,7 @@ http {
 	server {
 		listen <%= ENV['PORT'] %>;
 		server_name  _;
-		root <%= ENV['HOME'] %>;
+		root <%= ENV['HTML_ROOT'] %>;
 		index index.html;
 	}
 }
